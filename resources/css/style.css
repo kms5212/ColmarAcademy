@@ -1,0 +1,187 @@
+html,
+body {
+  max-width: 1500px;
+  font-family: "Open Sans Condensed", Arial, sans-serif;
+  font-size: 16px;
+  margin: auto;
+  background-color: gray;
+}
+
+.container {
+  width: 100%;
+  max-width: inherit;
+}
+
+/* Header Code */
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: inherit;
+  z-index: 1;
+  border-bottom: 0.1rem solid black;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: gray;
+  padding: 0 0.5rem;
+}
+
+nav a:hover {
+  color: darkblue;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.big {
+  display: flex;
+}
+
+.small {
+  display: none;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+#academy {
+  color: darkblue;
+  font-weight: normal;
+}
+
+
+/* Header Code - Tablet */
+@media only screen and (max-width: 760px) and (min-width: 470px) {
+  .logo span {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+  .logo img {
+    height: 2.5rem;
+  }
+}
+
+/* Header Code - Mobile */
+@media only screen and (max-width: 470px) {
+  .big {
+    display: none;
+  }
+  nav,
+  .small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem 0.5rem;
+  }
+}
+
+/* Banner Code */
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  padding-top: 6rem;
+  background-color: lightgray;
+  color: dimgray;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 2.5rem;
+}
+
+.text a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  background-color: dimgray;
+  color: lightgray;
+  width: 12.5rem;
+  padding: 0.5rem;
+  margin: 0rem;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.text a:hover {
+  background-color: darkblue;
+  font-weight: bold;
+}
+
+.text h1 {
+  margin: 2rem, 0rem, 2rem, 1rem;
+}
+
+.text h3 {
+  margin: 0rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Banner Code - Small Screen */
+@media only screen and (max-width: 760px) {
+  .banner {
+    flex-direction: column;
+  }
+  .text {
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+}
+
+/* Banner Code - Tablet */
+@media only screen and (max-width: 760px) and (min-width: 470px) {
+  .banner img {
+    height: 22.5rem;
+  }
+}
+
+/* Banner Code - Mobile */
+@media only screen and (max-width: 470px) {
+  .banner {
+    padding: 4rem 0rem 2rem 0rem;
+  }
+  .banner img {
+    height: 100%;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .text h1 {
+    margin-left: 0rem;
+  }
+}
