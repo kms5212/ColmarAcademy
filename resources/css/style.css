@@ -45,6 +45,20 @@ body {
   max-width: 100%;
 }
 
+/* General Code - Small Screen */
+@media only screen and (max-width: 760px) {
+  .rightdiv {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 0rem;
+  }
+  .leftdiv {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 0rem;
+  }
+}
+
 /* Header Code */
 header {
   display: flex;
@@ -108,9 +122,6 @@ nav a:hover {
 
 /* Header Code - Tablet */
 @media only screen and (max-width: 760px) and (min-width: 470px) {
-  .leftdiv {
-    max-width: 100%;
-  }
   .logo span {
     display: none;
   }
@@ -122,6 +133,7 @@ nav a:hover {
   }
   .text .rightdiv {
     margin-bottom: 2rem;
+    padding: 0rem;
   }
 }
 
@@ -145,6 +157,7 @@ nav a:hover {
   }
   .text .rightdiv{
     margin-bottom: 2rem;
+    padding: 0rem;
   }
 }
 
@@ -194,6 +207,9 @@ nav a:hover {
 
 /* Banner Code - Small Screen */
 @media only screen and (max-width: 760px) {
+  .leftdiv {
+    max-width: 100%;
+  }
   .splitdiv {
     flex-direction: column;
   }
@@ -210,6 +226,10 @@ nav a:hover {
     margin: 0rem;
     padding-bottom: 2rem;
   }
+  .banner .rightdiv {
+    padding-right: 0rem;
+    width: auto;
+  }
 }
 
 /* Banner Code - Tablet */
@@ -224,14 +244,24 @@ nav a:hover {
   .banner {
     padding: 4rem 0rem 2rem 0rem;
   }
+  .banner h3 {
+    padding: 0rem 1rem;
+  }
   .banner img {
     height: 100%;
     width: 100%;
     padding: 0rem;
     margin: 0rem;
   }
+  .text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .text h1 {
     margin-left: 0rem;
+  }
+  .banner .rightdiv {
+    padding-right: 0rem;
   }
 }
 
@@ -293,4 +323,69 @@ nav a:hover {
 
 #special {
   border-top: none;
+}
+
+#smallon {
+  display: none;
+}
+
+/* About Code - Small Screen */
+@media only screen and (max-width: 760px) {
+  .about .rightdiv {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    border: none;
+  }
+  .smallinfo {
+    padding: 1rem 0rem;
+    border: none;
+    border-top: 0.1rem solid gray;
+  }
+}
+
+/* About Code - Tablet */
+@media only screen and (max-width: 760px) and (min-width: 470px) {
+  .moretext {
+    padding: 0rem 1rem;
+  }
+  .about .rightdiv {
+    width: 100%;
+  }
+  .smallinfo {
+    width: 100%;
+  }
+  .smallinfo img {
+    padding-left: 1rem;
+  }
+  .info img {
+    max-width: 90%;
+    height: auto;
+  }
+  #special {
+    border-top: 0.1rem solid gray;
+  }
+}
+
+/* About Code - Mobile */
+@media only screen and (max-width: 470px) {
+  .info {
+    display: none;
+  }
+  .smallinfo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #bigon {
+    display: none;
+  }
+  #smallon {
+    display: flex;
+    width: auto;
+    padding: 1rem 0rem;
+  }
+  .smallinfo img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
