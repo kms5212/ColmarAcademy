@@ -307,6 +307,7 @@ nav a:hover {
 
 .subtext h3 {
   font-size: 1.25rem;
+  color: darkblue;
 }
 
 .subtext h4 {
@@ -388,4 +389,104 @@ nav a:hover {
     width: 100%;
     max-width: 100%;
   }
+  .subtext {
+    width: 90%;
+    justify-content: flex-start;
+  }
+}
+
+/* Learning Section */
+.learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  padding-bottom: 2rem;
+}
+.learning h2 {
+  padding: 2rem 0rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  max-width: 25%;
+  width: 100%;
+  margin: 1rem;
+  margin-top: 0rem;
+}
+
+.box img {
+  max-width: 100%;
+}
+
+.row .second {
+  margin-bottom: 2rem;
+}
+
+.subblurb {
+  margin: 1rem;
+}
+
+.box a{
+  text-decoration: none;
+  color: darkblue;
+}
+
+.box h3,
+.box h4 {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.box h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+/* Learning Code - Mobile */
+@media only screen and (max-width: 470px) {
+ .learning h2 {
+   color: darkblue;
+ }
+ .row {
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   padding: 0rem;
+   margin: 0rem;
+ }
+ .box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: gray;
+   color: white;
+   max-width: 100%;
+   width: 90%;
+   margin: 1rem;
+   margin-top: 0rem;
+ }
+ .box a{
+   color: white;
+ }
+ .box img {
+   display: none;
+ }
+ .subblurb  h4{
+   display: none;
+ }
 }
